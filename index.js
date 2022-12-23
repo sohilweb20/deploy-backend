@@ -27,6 +27,9 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
   res.send("This data is all about headphoneZone");
 });
+app.get("/contact", (req, res) => {
+  res.send("owner headphoneZone is soilweb20");
+});
 app.use("/users", dataRouter);
 
 //running port
