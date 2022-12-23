@@ -8,6 +8,7 @@ const { dataRouter } = require("./Routes/data.route");
 
 const PORT = process.env.port || 7000;
 
+/////
 require("dotenv").config();
 const app = express();
 app.use(express.json());
