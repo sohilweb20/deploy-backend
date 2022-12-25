@@ -6,7 +6,7 @@ const cors = require("cors");
 const { connection } = require("./Config/db");
 const { dataRouter } = require("./Routes/data.route");
 
-const PORT = process.env.port || 7000;
+const PORT = process.env.port || 7009;
 
 /////
 require("dotenv").config();
@@ -27,8 +27,8 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
   res.send("This data is all about headphoneZone");
 });
-app.get("/contact", (req, res) => {
-  res.send("owner headphoneZone is soilweb20");
+app.get("/hii", (req, res) => {
+  res.send("owner headphoneZone is sohilweb20");
 });
 app.use("/users", dataRouter);
 
@@ -37,8 +37,8 @@ app.listen(PORT, async () => {
   try {
     await connection;
     console.log("connected to db");
-    console.log(process.env.name);
-    console.log("listening on port 7005");
+    // console.log(process.env.name);
+    console.log("listening on port 7009");
   } catch (err) {
     console.log("error while connectoing to db");
     console.log(err);
