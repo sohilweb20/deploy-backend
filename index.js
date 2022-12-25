@@ -30,7 +30,7 @@ app.get("/about", (req, res) => {
 app.get("/hii", (req, res) => {
   res.send("owner headphoneZone is sohilweb20");
 });
-app.use("/users", dataRouter);
+app.use("/leads", dataRouter);
 
 //running port
 app.listen(PORT, async () => {

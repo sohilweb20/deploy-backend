@@ -9,5 +9,5 @@ const HeadSChema = mongoose.Schema({
   Poster: { type: String, required: true },
 });
 
-const HeadPhoneModel = mongoose.model("HeadPhone", HeadSChema);
+const HeadPhoneModel = mongoose.model("headphone", HeadSChema);
 module.exports = { HeadPhoneModel };
